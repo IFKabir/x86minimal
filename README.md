@@ -1,12 +1,8 @@
-# ZeroRing
-
-<p align="left">
-  <img src="docs/logo.svg" alt="ZeroRing Logo" width="120" height="120">
-</p>
+# x86minimal
 
 A tiny x86 kernel that boots up and does... nothing. Yet.
 
-It's 32-bit, boots via GRUB, and currently just sits in an infinite loop. But hey, it *boots*. That's honestly the hardest part.
+It's 32-bit, boots via GRUB, and currently just sits in an infinite loop. But hey, it _boots_. That's honestly the hardest part.
 
 **[API Reference](https://zeroring.vercel.app/)** · **[Releases](https://github.com/IFKabir/ZeroRing/releases)**
 
