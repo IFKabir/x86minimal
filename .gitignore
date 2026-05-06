@@ -1,0 +1,39 @@
+# ── CMake build output ───────────────────────────────────────
+build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_deps/
+
+# ── Kernel build artifacts ───────────────────────────────────
+*.o
+*.elf
+*.iso
+*.img
+*.bin
+
+# ── ISO staging directory ────────────────────────────────────
+isodir/
+
+
+# ── Bochs runtime files ──────────────────────────────────────
+bochslog.txt
+*.bochsrc
+
+# ── QEMU artifacts ───────────────────────────────────────────
+*.qcow2
+*.raw
+
+# ── Editor / IDE ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ── Compilation database (can be regenerated) ────────────────
+compile_commands.json
