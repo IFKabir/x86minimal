@@ -1,18 +1,3 @@
-; ─────────────────────────────────────────────────────────────
-; loader.s — Multiboot-compliant assembly entry point for ZeroRing
-;
-; Provides the initial boot code that GRUB transfers control to.
-; Sets up the Multiboot header, allocates a 4 KB kernel stack in
-; BSS, and calls into C++ kernel code.
-;
-; Boot flow:
-;   1. GRUB loads kernel ELF, validates Multiboot header
-;   2. Control transfers to `loader`
-;   3. ESP set to top of kernel_stack (4096 bytes)
-;   4. sum_of_three(1, 2, 3) called as stack/ABI test
-;   5. CPU enters infinite loop (halt)
-; ─────────────────────────────────────────────────────────────
-
 global loader
 
 MAGIC_NUMBER equ 0x1BADB002
