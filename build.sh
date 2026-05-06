@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Usage: ./build.sh [run|clean]
+# Usage: ./build.sh run or ./build.sh clean or ./build.sh
 set -euo pipefail
 
 BUILD_DIR="$(dirname "$0")/build"
