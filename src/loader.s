@@ -19,17 +19,18 @@ kernel_stack:
 
 section .text
 extern kmain
-extern sum_of_three
 
 loader:
     mov esp, kernel_stack + KERNEL_STACK_SIZE
-
-    push dword 3
-    push dword 2
-    push dword 1
-    call sum_of_three
-
-    ; call kmain
+    call kmain
 
 .loop:
     jmp .loop
+
+global outb
+
+outb:
+    mov al, [esp + 8]
+    mov dx, [esp + 4]
+    out dx, al
+    ret
